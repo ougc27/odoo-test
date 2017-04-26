@@ -1,0 +1,199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* user_profile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-26 23:02+0000\n"
+"PO-Revision-Date: 2017-04-26 23:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
+msgid "Add Extra Information"
+msgstr "Agregue Información Adicional"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_search
+msgid "Adults"
+msgstr "Adultos"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_age
+msgid "Age"
+msgstr "Edad"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_birthday
+msgid "Birthday"
+msgstr "Fecha de Nacimiento"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_create_uid
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_create_uid
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_create_date
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_create_date
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_dedicated_hours
+msgid "Dedicated hours"
+msgstr "Horas Promedio Dedicadas"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_display_name
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_display_name
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_display_name
+msgid "Display Name"
+msgstr "Nombre desplegado"
+
+#. module: user_profile
+#: selection:user.profile,gender:0
+msgid "Female"
+msgstr "Femenino"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_gender
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_search
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
+msgid "General Information"
+msgstr "Información general"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_search
+msgid "Group by..."
+msgstr "Agrupar por..."
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_hobbie_ids
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
+msgid "Hobbies"
+msgstr "Hobbies"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_id
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_id
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_id
+msgid "ID"
+msgstr "ID"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie___last_update
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname___last_update
+#: model:ir.model.fields,field_description:user_profile.field_user_profile___last_update
+msgid "Last Modified on"
+msgstr "Ultima modificacion realizada"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_write_uid
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_write_uid
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualizacion por"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_write_date
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_write_date
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización realizada"
+
+#. module: user_profile
+#: selection:user.profile,gender:0
+msgid "Male"
+msgstr "Masculino"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_name
+#: model:ir.model.fields,field_description:user_profile.field_user_nickname_name
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_name
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_nickname_ids
+#: model:ir.ui.menu,name:user_profile.user_nickname_open_menu
+msgid "Nicknames"
+msgstr "Apodo(s)"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_notes
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
+msgid "Notes"
+msgstr "Notas"
+
+#. module: user_profile
+#: model:ir.ui.menu,name:user_profile.user_profile_configuration_menu
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_hobbie_user_id
+msgid "User"
+msgstr "Usuario"
+
+#. module: user_profile
+#: model:ir.actions.act_window,name:user_profile.actopm_user_nickname_open
+msgid "User Nicknames"
+msgstr "Apodos"
+
+#. module: user_profile
+#: model:ir.ui.menu,name:user_profile.user_profile_open_menu
+msgid "User Profile"
+msgstr "Perfil Usuario"
+
+#. module: user_profile
+#: model:ir.ui.menu,name:user_profile.main_menu_user_profile
+msgid "User's Profile"
+msgstr "Perfiles de Usuario"
+
+#. module: user_profile
+#: model:ir.ui.menu,name:user_profile.menu_profile
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: user_profile
+#: model:ir.actions.act_window,name:user_profile.action_user_profile_open
+msgid "Users Profile"
+msgstr "Pefil de los Usuarios"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.view_user_nickname_tree
+#: model:ir.ui.view,arch_db:user_profile.view_user_profile_tree
+msgid "description"
+msgstr "Descripción"
+
+#. module: user_profile
+#: model:ir.model,name:user_profile.model_user_hobbie
+msgid "user.hobbie"
+msgstr "user.hobbie"
+
+#. module: user_profile
+#: model:ir.model,name:user_profile.model_user_nickname
+msgid "user.nickname"
+msgstr "user.nickname"
+
+#. module: user_profile
+#: model:ir.model,name:user_profile.model_user_profile
+msgid "user.profile"
+msgstr "user.profile"
+

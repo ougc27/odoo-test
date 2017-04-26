@@ -12,6 +12,7 @@
     "depends": [],
     "data": [
         "security/ir.model.access.csv",
+        "report/user_profile_report.xml",
         "views/main_view.xml",
         "views/user_nickname_view.xml",
         "views/user_profile_view.xml",

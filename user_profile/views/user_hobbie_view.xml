@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_user_hobbie_tree">
+            <field name="name">view.user.hobbie.tree</field>
+            <field name="model">user.hobbie</field>
+            <field name="arch" type="xml">
+                <tree string="description">
+                    <field name="name"/>
+                    <field name="dedicated_hours"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

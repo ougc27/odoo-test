@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_user_hobbie,access_user_hobbie,model_user_hobbie,,1,1,1,1
+access_user_nickname,access_user_nickname,model_user_nickname,,1,1,1,1
+access_user_profile,access_user_profile,model_user_profile,,1,1,1,1

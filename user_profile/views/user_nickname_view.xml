@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_user_nickname_tree">
+            <field name="name">view.user.nickname.tree</field>
+            <field name="model">user.nickname</field>
+            <field name="arch" type="xml">
+                <tree string="description" editable="top">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id='actopm_user_nickname_open' model='ir.actions.act_window'>
+            <field name='name'>User Nicknames</field>
+            <field name='res_model'>user.nickname</field>
+            <field name='view_type'>form</field>
+            <field name='view_mode'>tree,form</field>
+        </record>
+
+        <menuitem id="user_nickname_open_menu" name="Nicknames" parent="user_profile.user_profile_configuration_menu" action="actopm_user_nickname_open"/>
+    </data>
+</odoo>

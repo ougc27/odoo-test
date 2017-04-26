@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_user_profile_tree" model="ir.ui.view">
+            <field name="name">view.user.profile.tree</field>
+            <field name="model">user.profile</field>
+            <field name="arch" type="xml">
+                <tree string="description">
+                    <field name="name"/>
+                    <field name="birthday"/>
+                    <field name="gender"/>
+                    <field name="age"/>
+                    <field name="hobbie_ids"/>
+                    <field name="nickname_ids"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_user_profile_form" model="ir.ui.view">
+            <field name="name">view.user.profile.form</field>
+            <field name="model">user.profile</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header/>
+                    <sheet>
+                        <h1>
+                            <field name="name" nolabel="1" placeholder="Name"/>
+                        </h1>
+                        <group col="2" colspan="4" string="General Information">
+                            <field name="gender" widget="radio"/>
+                            <field name="birthday"/>
+                            <field name="age"/>
+                            <field name="nickname_ids" widget="many2many_tags"/>
+                        </group>
+                        <notebook>
+                            <page string="Hobbies">
+                                <group>
+                                    <field name="hobbie_ids" nolabel="1">
+                                        <tree editable="top">
+                                            <field name="name"/>
+                                            <field name="dedicated_hours"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Notes">
+                                <group>
+                                    <field name="notes" nolabel="1" placeholder="Add Extra Information"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_user_profile_search" model="ir.ui.view">
+            <field name="name">view.user_profile.search</field>
+            <field name="model">user.profile</field>
+            <field name="arch" type="xml">
+                <search>
+                    <filter domain="[('age','&gt;=', 18)]" icon="terp-gtk-media-pause" string="Adults"/>
+                    <group expand="0" string="Group by...">
+                        <filter context="{'group_by' : 'gender'}" string="Gender"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_user_profile_open" model="ir.actions.act_window">
+            <field name="name">Users Profile</field>
+            <field name="res_model">user.profile</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_user_profile_open" id="user_profile_open_menu" name="User Profile" parent="user_profile.menu_profile"/>
+    </data>
+</odoo>

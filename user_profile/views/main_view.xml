@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="main_menu_user_profile" name="User's Profile" sequence="10" web_icon="user_profile,static/description/main_icon.png"/>
+        <menuitem id="menu_profile" name="Users" parent="user_profile.main_menu_user_profile" sequence="10"/>
+        <menuitem id="user_profile_configuration_menu" name="Settings" parent="user_profile.main_menu_user_profile" sequence="11"/>
+    </data>
+</odoo>

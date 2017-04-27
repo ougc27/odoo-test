@@ -9,13 +9,15 @@
     "license": "LGPL-3",
     "website": "",
     "category": "Generic Modules",
-    "depends": [],
+    "depends": ["base", "report"],
     "data": [
+        "data/paper_format.xml",
         "security/ir.model.access.csv",
         "report/user_profile_report.xml",
         "views/main_view.xml",
         "views/user_nickname_view.xml",
         "views/user_profile_view.xml",
+        "report/user_profile_report.xml",
     ],
     'installable': True
 }

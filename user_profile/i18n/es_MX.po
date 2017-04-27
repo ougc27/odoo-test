@@ -6,14 +6,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-26 23:02+0000\n"
-"PO-Revision-Date: 2017-04-26 23:02+0000\n"
+"POT-Creation-Date: 2017-04-27 22:05+0000\n"
+"PO-Revision-Date: 2017-04-27 22:05+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
+msgid "<span>Age: </span>"
+msgstr "<span>Edad: </span>"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
+msgid "<span>Birthday: </span>"
+msgstr "<span>Fecha de Nacimiento: </span>"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
+msgid "<span>Gender: </span>"
+msgstr "<span>Género: </span>"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
+msgid "<span>Nickname(s): </span>"
+msgstr "<span>Apodo(s): </span>"
 
 #. module: user_profile
 #: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
@@ -36,6 +56,11 @@ msgid "Birthday"
 msgstr "Fecha de Nacimiento"
 
 #. module: user_profile
+#: model:ir.model.fields,field_description:user_profile.field_user_profile_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: user_profile
 #: model:ir.model.fields,field_description:user_profile.field_user_hobbie_create_uid
 #: model:ir.model.fields,field_description:user_profile.field_user_nickname_create_uid
 #: model:ir.model.fields,field_description:user_profile.field_user_profile_create_uid
@@ -48,6 +73,11 @@ msgstr "Creado por"
 #: model:ir.model.fields,field_description:user_profile.field_user_profile_create_date
 msgid "Created on"
 msgstr "Creado en"
+
+#. module: user_profile
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
+msgid "Dedicated Hours"
+msgstr "Dedicated Hours"
 
 #. module: user_profile
 #: model:ir.model.fields,field_description:user_profile.field_user_hobbie_dedicated_hours
@@ -84,6 +114,7 @@ msgstr "Agrupar por..."
 
 #. module: user_profile
 #: model:ir.model.fields,field_description:user_profile.field_user_profile_hobbie_ids
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
 #: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
 msgid "Hobbies"
 msgstr "Hobbies"
@@ -125,6 +156,7 @@ msgstr "Masculino"
 #: model:ir.model.fields,field_description:user_profile.field_user_hobbie_name
 #: model:ir.model.fields,field_description:user_profile.field_user_nickname_name
 #: model:ir.model.fields,field_description:user_profile.field_user_profile_name
+#: model:ir.ui.view,arch_db:user_profile.report_user_profile
 #: model:ir.ui.view,arch_db:user_profile.view_user_profile_form
 msgid "Name"
 msgstr "Nombre"
@@ -142,9 +174,14 @@ msgid "Notes"
 msgstr "Notas"
 
 #. module: user_profile
+#: model:ir.actions.report.xml,name:user_profile.print_report_user_profile
+msgid "Report"
+msgstr "Report"
+
+#. module: user_profile
 #: model:ir.ui.menu,name:user_profile.user_profile_configuration_menu
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Configuración"
 
 #. module: user_profile
 #: model:ir.model.fields,field_description:user_profile.field_user_hobbie_user_id

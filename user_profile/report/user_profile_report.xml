@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_user_profile">
+            <t t-as="doc" t-foreach="docs">
+                <div class="header"/>
+                <div class="page">
+                    <div class="header_move">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img style="max-height:104px; margin-left:" t-att-src="'data:image/png;base64,%s' % doc.company_id.logo" t-if="doc.company_id.logo"/>
+                            </div>
+                            <div class="col-xs-5 text-center">
+                                <strong>
+                                    <span t-field="doc.company_id.partner_id.name"/>
+                                    <br/>
+                                    <span t-field="doc.company_id.partner_id.vat_split"/>
+                                    <br/>
+                                    <span t-field="doc.company_id.partner_id.street"/>
+                                    <br/>
+                                    <span t-field="doc.company_id.partner_id.street2"/>
+                                    <span t-field="doc.company_id.partner_id.city"/>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                    <h2 t-field="doc.name"/>
+                    <p>
+                        <span>Gender: </span>
+                        <span t-field="doc.gender"/>
+                    </p>
+                    <p>
+                        <span>Birthday: </span>
+                        <span t-field="doc.birthday"/>
+                    </p>
+                    <p>
+                        <span>Age: </span>
+                        <span t-field="doc.age"/>
+                    </p>
+                    <p>
+                        <span>Nickname(s): </span>
+                        <t t-as="nickname" t-foreach="doc.nickname_ids">
+                            <span t-field="nickname.name"/>
+                        </t>
+                    </p>
+                    <p>
+                        <h2>Hobbies</h2>
+                    </p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Name</th>
+                            <th>Dedicated Hours</th>
+                        </tr>
+                        <t t-as="hobbie" t-foreach="doc.hobbie_ids">
+                            <tr>
+                                <td>
+                                    <span t-esc="hobbie.name"/>
+                                </td>
+                                <td>
+                                    <span t-esc="hobbie.dedicated_hours"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </table>
+                </div>
+            </t>
+        </template>  
+        <template id="report_user">
+            <t t-call="report.html_container">
+                <t t-as="doc" t-foreach="docs">
+                    <t t-call="user_profile.report_user_profile" t-lang="doc.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+        <report file="user_profile.report_user_profile" id="print_report_user_profile" model="user.profile" name="user_profile.report_user_profile" report_type="qweb-pdf" string="Report"/>
+
+        <record id="print_report_user_profile" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="user_profile.user_profile_paperformat"/>
+        </record> 
+    </data>
+</odoo>
